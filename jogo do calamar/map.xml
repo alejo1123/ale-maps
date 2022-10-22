@@ -1,0 +1,2819 @@
+<map proto="1.4.2" game="Death Run">
+    <name>Jogo do Calamar</name>
+    <version>1.0.12</version>
+    <objective>Survive the obstacle course as the Runners, or eliminate the enemy as Death</objective>
+    <created>2022-10-03</created>
+    <authors>
+        <author uuid="a90be681-0d8d-4d76-9094-c609a5d4596a" contribution="XML"/> <!-- alejitox  -->
+    </authors>
+    <contributors>
+        <contributor uuid="d71152ca-187d-43c4-9901-ba001606c655" contribution="Emotional support"/> <!-- wylt -->
+    </contributors>
+    <teams>
+        <team id="runners" color="gold" max="80">Runners</team>
+        <team id="host" color="black" max="1">Host</team>
+        <team id="test" color="blue" max="0" max-overfill="0">test</team>
+        <team id="prueba" color="yellow" max="0" max-overfill="0">prueba</team>
+        <team id="wtf" color="green" max="0" max-overfill="4">wtf</team>
+        <team id="how" color="dark red" max="0" max-overfill="0">how</team>
+    </teams>
+    <time>10m</time>
+    <kits>
+        <kit id="runner-kit" force="true">
+            <health>4</health>
+            <effect amplifier="-4">health boost</effect>
+            <head name="001" uuid="a90be681-0d8d-4d76-9094-c609a5d4596a" slot="slot.armor.head">
+                <skin>e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE3NTI2YTllN2U2MDI1ODQzNzY4OTkyZDhkZDllZThmMzRjZjIyOGU4NWUxY2RmYzdlOWEyZWNmMTUyNjc1MiJ9fX0=</skin>
+            </head>
+            <chestplate unbreakable="true" color="6F8D6F" material="leather chestplate"/>
+            <leggings unbreakable="true" color="6F8D6F" material="leather leggings"/>
+            <boots unbreakable="true" color="FFFFFF" material="leather boots"/>
+            <game-mode>adventure</game-mode>
+        </kit>
+        <kit id="host-kit" force="true">
+            <health>4</health>
+            <effect amplifier="-4">health boost</effect>
+            <head name="Skull" uuid="a90be681-0d8d-4d76-9094-c609a5d4596a" slot="slot.armor.head">
+                <skin>e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I2NzE2MWVmZjRkZGUxMWJjNzM2Nzc0ZmJiZTZjZmFlNTE4Nzk1ZGZkYmM2OWMyNjkxMTdmYzZlMWU1NTVkMCJ9fX0=</skin>
+            </head>
+            <chestplate unbreakable="true" color="191919" material="leather chestplate"/>
+            <leggings unbreakable="true" color="191919" material="leather leggings"/>
+            <boots unbreakable="true" color="191919" material="leather boots"/>
+            <game-mode>adventure</game-mode>
+        </kit>
+        <kit id="rope" force="true">
+            <head name="001" uuid="a90be681-0d8d-4d76-9094-c609a5d4596a" slot="slot.armor.head">
+                <skin>e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE3NTI2YTllN2U2MDI1ODQzNzY4OTkyZDhkZDllZThmMzRjZjIyOGU4NWUxY2RmYzdlOWEyZWNmMTUyNjc1MiJ9fX0=</skin>
+            </head>
+            <chestplate unbreakable="true" color="6F8D6F" material="leather chestplate"/>
+            <leggings unbreakable="true" color="6F8D6F" material="leather leggings"/>
+            <boots unbreakable="true" color="FFFFFF" material="leather boots"/>
+            <item slot="0" amount="64" material="emerald block"/>
+            <item slot="1" amount="64" material="emerald block"/>
+            <item slot="2" amount="64" material="emerald block"/>
+            <item slot="3" amount="64" material="emerald block"/>
+            <item slot="4" amount="64" material="emerald block"/>
+            <item slot="5" amount="64" material="emerald block"/>
+            <item slot="6" amount="64" material="emerald block"/>
+            <item slot="7" amount="64" material="emerald block"/>
+            <item slot="8" amount="64" material="emerald block"/>
+            <item slot="9" amount="64" material="emerald block"/>
+            <item slot="10" amount="64" material="emerald block"/>
+            <item slot="11" amount="64" material="emerald block"/>
+            <item slot="12" amount="64" material="emerald block"/>
+            <item slot="13" amount="64" material="emerald block"/>
+            <item slot="14" amount="64" material="emerald block"/>
+            <item slot="15" amount="64" material="emerald block"/>
+            <item slot="16" amount="64" material="emerald block"/>
+            <item slot="17" amount="64" material="emerald block"/>
+            <item slot="18" amount="64" material="emerald block"/>
+            <item slot="19" amount="64" material="emerald block"/>
+            <item slot="20" amount="64" material="emerald block"/>
+            <item slot="21" amount="64" material="emerald block"/>
+            <item slot="22" amount="64" material="emerald block"/>
+            <item slot="23" amount="64" material="emerald block"/>
+            <item slot="24" amount="64" material="emerald block"/>
+            <item slot="25" amount="64" material="emerald block"/>
+            <item slot="26" amount="64" material="emerald block"/>
+            <item slot="27" amount="64" material="emerald block"/>
+            <item slot="28" amount="64" material="emerald block"/>
+            <item slot="29" amount="64" material="emerald block"/>
+            <item slot="30" amount="64" material="emerald block"/>
+            <item slot="31" amount="64" material="emerald block"/>
+            <item slot="32" amount="64" material="emerald block"/>
+            <item slot="33" amount="64" material="emerald block"/>
+            <item slot="34" amount="64" material="emerald block"/>
+            <item slot="35" amount="64" material="emerald block"/>
+        </kit>
+        <kit id="jump-deny-kit" force="true">
+            <effect duration="1" amplifier="-10">jump</effect>
+        </kit>
+        <kit id="wither-kit" force="true">
+            <effect duration="1" amplifier="3">wither</effect>
+            <action>
+                <message>
+                    <title>`4ELIMINATED!</title>
+                </message>
+            </action>
+        </kit>
+        <kit id="wither-kit2" force="true">
+            <effect duration="1" amplifier="3">wither</effect>
+            <action>
+                <message>
+                    <title>`4Time is over, ELIMINATED!</title>
+                </message>
+            </action>
+        </kit>
+        <kit id="shift-kit" force="true">
+            <effect duration="100" amplifier="10">slowness</effect>
+        </kit>
+        <kit id="switch-how">
+            <team-switch team="how" show-title="false"/>
+        </kit>
+        <kit id="switch-test">
+            <team-switch team="test" show-title="false"/>
+        </kit>
+        <give kit="switch-how" filter="switch-t1"/>
+        <give kit="switch-test" filter="switch-t2" />
+    </kits>
+    <spawns>
+        <default yaw="90">
+            <regions>
+                <point>10.5,5,13.5</point>
+            </regions>
+        </default>
+        <spawn team="runners" kit="runner-kit" yaw="180">
+            <regions>
+                <cuboid min="6,2,89" max="-6,2,81"/>
+            </regions>
+        </spawn>
+        <spawn team="wtf" kit="runner-kit" yaw="-90">
+            <regions>
+                <point>-99,35,-178.5</point>
+            </regions>
+        </spawn>
+        <spawn team="host" kit="host-kit" yaw="0"  pitch="-30">
+            <regions>
+                <point>0.5,12,73.5</point>
+            </regions>
+        </spawn>
+        <spawn team="how" kit="rope" region="team1-spawn" yaw="-90" safe="true">
+            <after duration="15s"/>
+        </spawn>
+        <spawn team="test" kit="rope" region="team2-spawn" yaw="90" safe="true">
+            <after duration="15s"/>
+        </spawn>
+    </spawns>
+    <regions>
+        <cuboid id="game1-start-region" min="-3,3,70" max="3,5,68"/>
+        <cuboid id="1st-game-barrier" min="-25,2,54" max="26,12,52"/>
+        <cuboid id="1st-game-play" min="-25,1,52" max="26,3,-7"/>
+        <cuboid id="1st-game-finish" min="-25,1,-7" max="26,3,-20"/>
+        <cuboid id="portal1" min="-94,35,-179" max="-93,36,-178"/>
+        <cuboid id="portal-wall" min="-93,35,-179" max="-92,37,-178"/>
+        <cuboid id="portal2" min="-92,35,-179" max="-90,36,-178"/>
+        <cuboid id="portal1-end" min="-4,32,-140" max="-11,33,-133"/>
+        <cuboid id="portal2-end" min="5,32,-140" max="12,33,-133"/>
+        <cuboid id="team1-switch" min="-16,32,-121" max="0,34,-153"/>
+        <cuboid id="team2-switch" min="1,32,-121" max="17,34,-153"/>
+        <cuboid id="team1-spawn" min="-39,49,-179" max="-26,50,-182"/>
+        <cuboid id="team2-spawn" min="40,49,-179" max="27,50,-182"/>
+        <cuboid id="team1-play" min="-18,49,-184" max="-58,48,-177"/>
+        <cuboid id="team2-play" min="19,49,-177" max="59,48,-184"/>
+        <cuboid id="team1-platform" min="-49,47,-177" max="-1,51,-184"/>
+        <cuboid id="team2-platform" min="50,47,-177" max="2,51,-184"/>
+        <point id="team1-won">-56.5,32,-180.5</point>
+        <point id="team2-won">57.5,32,-180.5</point>
+        <cuboid id="t1-p1" min="-56,32,-177" max="-57,34,-176"/>
+        <cuboid id="t1-p2" min="-56,32,-175" max="-57,34,-174"/>
+        <cuboid id="t1-p3" min="-56,32,-173" max="-57,34,-172"/>
+        <cuboid id="t1-p4" min="-56,32,-171" max="-57,34,-170"/>
+        <cuboid id="t1-p5" min="-56,32,-169" max="-57,34,-168"/>
+        <cuboid id="t1-p6" min="-56,32,-167" max="-57,34,-166"/>
+        <cuboid id="t1-p7" min="-56,32,-165" max="-57,34,-164"/>
+        <cuboid id="t1-p8" min="-56,32,-163" max="-57,34,-162"/>
+        <cuboid id="t1-p9" min="-56,32,-161" max="-57,34,-160"/>
+        <cuboid id="t1-p10" min="-56,32,-159" max="-57,34,-158"/>
+        <cuboid id="t1-p11" min="-56,32,-157" max="-57,34,-156"/>
+        <cuboid id="t1-p12" min="-56,32,-155" max="-57,34,-154"/>
+        <cuboid id="t1-p13" min="-56,32,-153" max="-57,34,-152"/>
+        <cuboid id="t1-p14" min="-56,32,-151" max="-57,34,-150"/>
+        <cuboid id="t1-p15" min="-56,32,-149" max="-57,34,-148"/>
+        <cuboid id="t1-p16" min="-56,32,-147" max="-57,34,-146"/>
+        <cuboid id="t2-p1" min="58,32,-177" max="57,34,-176"/>
+        <cuboid id="t2-p2" min="58,32,-175" max="57,34,-174"/>
+        <cuboid id="t2-p3" min="58,32,-173" max="57,34,-172"/>
+        <cuboid id="t2-p4" min="58,32,-171" max="57,34,-170"/>
+        <cuboid id="t2-p5" min="58,32,-169" max="57,34,-168"/>
+        <cuboid id="t2-p6" min="58,32,-167" max="57,34,-166"/>
+        <cuboid id="t2-p7" min="58,32,-165" max="57,34,-164"/>
+        <cuboid id="t2-p8" min="58,32,-163" max="57,34,-162"/>
+        <cuboid id="t2-p9" min="58,32,-161" max="57,34,-160"/>
+        <cuboid id="t2-p10" min="58,32,-159" max="57,34,-158"/>
+        <cuboid id="t2-p11" min="58,32,-157" max="57,34,-156"/>
+        <cuboid id="t2-p12" min="58,32,-155" max="57,34,-154"/>
+        <cuboid id="t2-p13" min="58,32,-153" max="57,34,-152"/>
+        <cuboid id="t2-p14" min="58,32,-151" max="57,34,-150"/>
+        <cuboid id="t2-p15" min="58,32,-149" max="57,34,-148"/>
+        <cuboid id="t2-p16" min="58,32,-147" max="57,34,-146"/>
+        <block id="t1-p1-wall">-57,33,-176</block>
+        <block id="t1-p2-wall">-57,33,-174</block>
+        <block id="t1-p3-wall">-57,33,-172</block>
+        <block id="t1-p4-wall">-57,33,-170</block>
+        <block id="t1-p5-wall">-57,33,-168</block>
+        <block id="t1-p6-wall">-57,33,-166</block>
+        <block id="t1-p7-wall">-57,33,-164</block>
+        <block id="t1-p8-wall">-57,33,-162</block>
+        <block id="t1-p9-wall">-57,33,-160</block>
+        <block id="t1-p10-wall">-57,33,-158</block>
+        <block id="t1-p11-wall">-57,33,-156</block>
+        <block id="t1-p12-wall">-57,33,-154</block>
+        <block id="t1-p13-wall">-57,33,-152</block>
+        <block id="t1-p14-wall">-57,33,-150</block>
+        <block id="t1-p15-wall">-57,33,-148</block>
+        <block id="t2-p1-wall">57,33,-176</block>
+        <block id="t2-p2-wall">57,33,-174</block>
+        <block id="t2-p3-wall">57,33,-172</block>
+        <block id="t2-p4-wall">57,33,-170</block>
+        <block id="t2-p5-wall">57,33,-168</block>
+        <block id="t2-p6-wall">57,33,-166</block>
+        <block id="t2-p7-wall">57,33,-164</block>
+        <block id="t2-p8-wall">57,33,-162</block>
+        <block id="t2-p9-wall">57,33,-160</block>
+        <block id="t2-p10-wall">57,33,-158</block>
+        <block id="t2-p11-wall">57,33,-156</block>
+        <block id="t2-p12-wall">57,33,-154</block>
+        <block id="t2-p13-wall">57,33,-152</block>
+        <block id="t2-p14-wall">57,33,-150</block>
+        <block id="t2-p15-wall">57,33,-148</block>
+        <cuboid id="winning-region" min="-2,17,102" max="2,18,108"/>
+        <cuboid id="eyes-region" min="-1,25,-12" max="2,26,-13"/>
+        <block id="win-region">0,18,105</block>
+        <cuboid id="block11" min="199,33,-149" max="200,35,-148"/>
+        <cuboid id="block12" min="200,33,-149" max="201,35,-148"/>
+        <cuboid id="block13" min="201,33,-149" max="202,35,-148"/>
+        <cuboid id="block14" min="202,33,-149" max="203,35,-148"/>
+        <cuboid id="block15" min="203,33,-149" max="204,35,-148"/>
+        <cuboid id="block16" min="204,33,-149" max="205,35,-148"/>
+        <cuboid id="block17" min="205,33,-149" max="206,35,-148"/>
+        <cuboid id="block18" min="206,33,-149" max="207,35,-148"/>
+        <cuboid id="block19" min="207,33,-149" max="208,35,-148"/>
+        <cuboid id="step1" min="200,33,-148" max="207,35,-144"/>
+        <cuboid id="step2" min="200,33,-142" max="207,35,-138"/>
+        <cuboid id="step3" min="200,33,-136" max="207,35,-132"/>
+        <cuboid id="step4" min="200,33,-130" max="207,35,-126"/>
+        <cuboid id="step5" min="200,33,-124" max="207,35,-120"/>
+        <cuboid id="step6" min="200,33,-118" max="207,35,-114"/>
+        <cuboid id="step7" min="200,33,-112" max="207,35,-108"/>
+        <cuboid id="step8" min="200,33,-106" max="207,35,-102"/>
+        <cuboid id="step9" min="200,33,-100" max="207,35,-96"/>
+        <cuboid id="step10" min="200,33,-92" max="207,35,-90"/>
+        <cuboid id="step11" min="200,33,-88" max="207,35,-84"/>
+        <cuboid id="step12" min="200,33,-82" max="207,35,-78"/>
+        <cuboid id="glass-11" min="200,32,-147" max="203,33,-144"/>
+        <cuboid id="glass-12" min="204,32,-147" max="207,33,-144"/>
+        <cuboid id="glass-21" min="200,32,-141" max="203,33,-138"/>
+        <cuboid id="glass-22" min="204,32,-141" max="207,33,-138"/>
+        <cuboid id="glass-31" min="200,32,-135" max="203,33,-132"/>
+        <cuboid id="glass-32" min="204,32,-135" max="207,33,-132"/>
+        <cuboid id="glass-41" min="200,32,-129" max="203,33,-126"/>
+        <cuboid id="glass-42" min="204,32,-129" max="207,33,-126"/>
+        <cuboid id="glass-51" min="200,32,-123" max="203,33,-120"/>
+        <cuboid id="glass-52" min="204,32,-123" max="207,33,-120"/>
+        <cuboid id="glass-61" min="200,32,-117" max="203,33,-114"/>
+        <cuboid id="glass-62" min="204,32,-117" max="207,33,-114"/>
+        <cuboid id="glass-71" min="200,32,-111" max="203,33,-108"/>
+        <cuboid id="glass-72" min="204,32,-111" max="207,33,-108"/>
+        <cuboid id="glass-81" min="200,32,-105" max="203,33,-102"/>
+        <cuboid id="glass-82" min="204,32,-105" max="207,33,-102"/>
+        <cuboid id="glass-91" min="200,32,-99" max="203,33,-96"/>
+        <cuboid id="glass-92" min="204,32,-99" max="207,33,-96"/>
+        <cuboid id="glass-101" min="200,32,-93" max="203,33,-90"/>
+        <cuboid id="glass-102" min="204,32,-93" max="207,33,-90"/>
+        <cuboid id="glass-111" min="200,32,-87" max="203,33,-84"/>
+        <cuboid id="glass-112" min="204,32,-87" max="207,33,-84"/>
+        <cuboid id="glass-121" min="200,32,-81" max="203,33,-78"/>
+        <cuboid id="glass-122" min="204,32,-81" max="207,33,-78"/>
+        <apply velocity="5,2,0" region="team1-play" filter="team2-done"/>
+        <apply velocity="-5,2,0" region="team2-play" filter="team1-done"/>
+    </regions>
+    <filters>
+        <all id="first16">
+            <variable var="aux_tp">[-1, 0]</variable>
+            <region id="portal1"/>
+        </all>
+        <all id="switch-t1">
+            <after duration="5s">
+                <variable var="aux_tp">2</variable>
+            </after>
+            <region id="team1-switch"/>
+        </all>
+        <all id="switch-t2">
+            <after duration="5s">
+                <variable var="aux_tp">2</variable>
+            </after>
+            <region id="team2-switch"/>
+        </all>
+        <all id="won-t1">
+            <after duration="10s">
+                <variable var="game2_state">1</variable>
+            </after>
+            <region id="team1-platform"/>
+            <variable var="team_1">(-oo,0]</variable>
+        </all>
+        <all id="won-t2">
+            <after duration="10s">
+                <variable var="game2_state">1</variable>
+            </after>
+            <region id="team2-platform"/>
+            <variable var="team_2">(-oo,0]</variable>
+        </all>
+        <variable id="count_tp" var="aux_tp">1</variable>
+        <variable id="red-light" var="eye_state">0</variable>
+        <variable id="green-light" var="eye_state">1</variable>
+        <variable id="game1-state-0" var="game1_state">0</variable>
+        <variable id="game1-state-1" var="game1_state">1</variable>
+        <variable id="game1-state-2" var="game1_state">2</variable>
+        <variable id="game1-state-3" var="game1_state">3</variable>
+        <variable id="game1-state-4" var="game1_state">4</variable>
+        <variable id="game1-state-5" var="game1_state">5</variable>
+        <variable id="game1-state-6" var="game1_state">6</variable>
+        <variable id="game2-finish" var="game1_state">1</variable>
+        <variable id="game4-sequence-1" var="game4_sequence">1</variable>
+        <variable id="game4-sequence-2" var="game4_sequence">2</variable>
+        <variable id="game4-sequence-3" var="game4_sequence">3</variable>
+        <variable id="game4-sequence-4" var="game4_sequence">4</variable>
+        <variable id="game4-sequence-5" var="game4_sequence">5</variable>
+        <variable id="game4-sequence-6" var="game4_sequence">6</variable>
+        <variable id="game4-sequence-7" var="game4_sequence">7</variable>
+        <variable id="game4-sequence-8" var="game4_sequence">8</variable>
+        <variable id="game4-sequence-9" var="game4_sequence">9</variable>
+        <variable id="team1-done" var="team_1">(-oo,0]</variable>
+        <variable id="team2-done" var="team_2">(-oo,0]</variable>
+        <variable id="sequence1step1" var="sequence1">1</variable>
+        <variable id="sequence1step2" var="sequence1">2</variable>
+        <variable id="sequence1step3" var="sequence1">3</variable>
+        <variable id="sequence1step4" var="sequence1">4</variable>
+        <variable id="sequence1step5" var="sequence1">5</variable>
+        <variable id="sequence1step6" var="sequence1">6</variable>
+        <variable id="sequence1step7" var="sequence1">7</variable>
+        <variable id="sequence1step8" var="sequence1">8</variable>
+        <variable id="sequence1step9" var="sequence1">9</variable>
+        <variable id="sequence1step10" var="sequence1">10</variable>
+        <variable id="sequence1step11" var="sequence1">11</variable>
+        <variable id="sequence1step12" var="sequence1">12</variable>
+        <variable id="sequence2step1" var="sequence2">1</variable>
+        <variable id="sequence2step2" var="sequence2">2</variable>
+        <variable id="sequence2step3" var="sequence2">3</variable>
+        <variable id="sequence2step4" var="sequence2">4</variable>
+        <variable id="sequence2step5" var="sequence2">5</variable>
+        <variable id="sequence2step6" var="sequence2">6</variable>
+        <variable id="sequence2step7" var="sequence2">7</variable>
+        <variable id="sequence2step8" var="sequence2">8</variable>
+        <variable id="sequence2step9" var="sequence2">9</variable>
+        <variable id="sequence2step10" var="sequence2">10</variable>
+        <variable id="sequence2step11" var="sequence2">11</variable>
+        <variable id="sequence2step12" var="sequence2">12</variable>
+        <variable id="sequence3step1" var="sequence3">1</variable>
+        <variable id="sequence3step2" var="sequence3">2</variable>
+        <variable id="sequence3step3" var="sequence3">3</variable>
+        <variable id="sequence3step4" var="sequence3">4</variable>
+        <variable id="sequence3step5" var="sequence3">5</variable>
+        <variable id="sequence3step6" var="sequence3">6</variable>
+        <variable id="sequence3step7" var="sequence3">7</variable>
+        <variable id="sequence3step8" var="sequence3">8</variable>
+        <variable id="sequence3step9" var="sequence3">9</variable>
+        <variable id="sequence3step10" var="sequence3">10</variable>
+        <variable id="sequence3step11" var="sequence3">11</variable>
+        <variable id="sequence3step12" var="sequence3">12</variable>
+        <variable id="sequence4step1" var="sequence4">1</variable>
+        <variable id="sequence4step2" var="sequence4">2</variable>
+        <variable id="sequence4step3" var="sequence4">3</variable>
+        <variable id="sequence4step4" var="sequence4">4</variable>
+        <variable id="sequence4step5" var="sequence4">5</variable>
+        <variable id="sequence4step6" var="sequence4">6</variable>
+        <variable id="sequence4step7" var="sequence4">7</variable>
+        <variable id="sequence4step8" var="sequence4">8</variable>
+        <variable id="sequence4step9" var="sequence4">9</variable>
+        <variable id="sequence4step10" var="sequence4">10</variable>
+        <variable id="sequence4step11" var="sequence4">11</variable>
+        <variable id="sequence4step12" var="sequence4">12</variable>
+        <variable id="sequence5step1" var="sequence5">1</variable>
+        <variable id="sequence5step2" var="sequence5">2</variable>
+        <variable id="sequence5step3" var="sequence5">3</variable>
+        <variable id="sequence5step4" var="sequence5">4</variable>
+        <variable id="sequence5step5" var="sequence5">5</variable>
+        <variable id="sequence5step6" var="sequence5">6</variable>
+        <variable id="sequence5step7" var="sequence5">7</variable>
+        <variable id="sequence5step8" var="sequence5">8</variable>
+        <variable id="sequence5step9" var="sequence5">9</variable>
+        <variable id="sequence5step10" var="sequence5">10</variable>
+        <variable id="sequence5step11" var="sequence5">11</variable>
+        <variable id="sequence5step12" var="sequence5">12</variable>
+        <variable id="sequence6step1" var="sequence6">1</variable>
+        <variable id="sequence6step2" var="sequence6">2</variable>
+        <variable id="sequence6step3" var="sequence6">3</variable>
+        <variable id="sequence6step4" var="sequence6">4</variable>
+        <variable id="sequence6step5" var="sequence6">5</variable>
+        <variable id="sequence6step6" var="sequence6">6</variable>
+        <variable id="sequence6step7" var="sequence6">7</variable>
+        <variable id="sequence6step8" var="sequence6">8</variable>
+        <variable id="sequence6step9" var="sequence6">9</variable>
+        <variable id="sequence6step10" var="sequence6">10</variable>
+        <variable id="sequence6step11" var="sequence6">11</variable>
+        <variable id="sequence6step12" var="sequence6">12</variable>
+        <variable id="sequence7step1" var="sequence7">1</variable>
+        <variable id="sequence7step2" var="sequence7">2</variable>
+        <variable id="sequence7step3" var="sequence7">3</variable>
+        <variable id="sequence7step4" var="sequence7">4</variable>
+        <variable id="sequence7step5" var="sequence7">5</variable>
+        <variable id="sequence7step6" var="sequence7">6</variable>
+        <variable id="sequence7step7" var="sequence7">7</variable>
+        <variable id="sequence7step8" var="sequence7">8</variable>
+        <variable id="sequence7step9" var="sequence7">9</variable>
+        <variable id="sequence7step10" var="sequence7">10</variable>
+        <variable id="sequence7step11" var="sequence7">11</variable>
+        <variable id="sequence7step12" var="sequence7">12</variable>
+        <variable id="sequence8step1" var="sequence8">1</variable>
+        <variable id="sequence8step2" var="sequence8">2</variable>
+        <variable id="sequence8step3" var="sequence8">3</variable>
+        <variable id="sequence8step4" var="sequence8">4</variable>
+        <variable id="sequence8step5" var="sequence8">5</variable>
+        <variable id="sequence8step6" var="sequence8">6</variable>
+        <variable id="sequence8step7" var="sequence8">7</variable>
+        <variable id="sequence8step8" var="sequence8">8</variable>
+        <variable id="sequence8step9" var="sequence8">9</variable>
+        <variable id="sequence8step10" var="sequence8">10</variable>
+        <variable id="sequence8step11" var="sequence8">11</variable>
+        <variable id="sequence8step12" var="sequence8">12</variable>
+        <variable id="sequence9step1" var="sequence9">1</variable>
+        <variable id="sequence9step2" var="sequence9">2</variable>
+        <variable id="sequence9step3" var="sequence9">3</variable>
+        <variable id="sequence9step4" var="sequence9">4</variable>
+        <variable id="sequence9step5" var="sequence9">5</variable>
+        <variable id="sequence9step6" var="sequence9">6</variable>
+        <variable id="sequence9step7" var="sequence9">7</variable>
+        <variable id="sequence9step8" var="sequence9">8</variable>
+        <variable id="sequence9step9" var="sequence9">9</variable>
+        <variable id="sequence9step10" var="sequence9">10</variable>
+        <variable id="sequence9step11" var="sequence9">11</variable>
+        <variable id="sequence9step12" var="sequence9">12</variable>
+    </filters>
+    <variables>
+        <variable id="game1_state" scope="match" default="-1"/>
+        <variable id="game1_finishers" scope="match" default="0"/>
+        <variable id="aux_tp" scope="match" default="0"/>
+        <variable id="game3_tp" scope="match" default="0"/>
+        <variable id="team_1" scope="match" default="1"/>
+        <variable id="team_2" scope="match" default="1"/>
+        <variable id="game2_state" scope="match" default="0"/>
+        <variable id="game4_step" scope="match" default="0"/>
+        <variable id="game4_sequence" scope="match" default="0"/>
+        <variable id="sequence1" scope="match" default="0"/>
+        <variable id="sequence2" scope="match" default="0"/>
+        <variable id="sequence3" scope="match" default="0"/>
+        <variable id="sequence4" scope="match" default="0"/>
+        <variable id="sequence5" scope="match" default="0"/>
+        <variable id="sequence6" scope="match" default="0"/>
+        <variable id="sequence7" scope="match" default="0"/>
+        <variable id="sequence8" scope="match" default="0"/>
+        <variable id="sequence9" scope="match" default="0"/>
+        <variable id="sequence_lock" scope="match" default="0"/>  <!-- 0 = unlocked, 1 = locked -->
+        <variable id="eye_state" scope="match" default="0"/>  <!-- 0 = red, 1 = green -->
+    </variables>
+    <actions>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p1"/>
+                        <region id="t2-p1"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p2"/>
+                        <region id="t2-p2"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p3"/>
+                        <region id="t2-p3"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p4"/>
+                        <region id="t2-p4"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p5"/>
+                        <region id="t2-p5"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p6"/>
+                        <region id="t2-p6"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p7"/>
+                        <region id="t2-p7"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p8"/>
+                        <region id="t2-p8"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p9"/>
+                        <region id="t2-p9"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p10"/>
+                        <region id="t2-p10"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p11"/>
+                        <region id="t2-p11"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p12"/>
+                        <region id="t2-p12"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p13"/>
+                        <region id="t2-p13"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p14"/>
+                        <region id="t2-p14"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p15"/>
+                        <region id="t2-p15"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p16"/>
+                        <region id="t2-p16"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <after duration="1s">
+                    <all>
+                        <variable var="game2_state">0</variable>
+                        <team>how</team>
+                        <not>
+                            <carrying><item material="133"/></carrying>
+                        </not>
+                    </all>
+                </after>
+            </filter>
+            <action>
+                <set var="team_1" value="team_1-1"/>
+                <set var="game2_state" value="game2_state+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <after duration="1s">
+                    <all>
+                        <variable var="game2_state">0</variable>
+                        <team>test</team>
+                        <not>
+                            <carrying><item material="133"/></carrying>
+                        </not>
+                    </all>
+                </after>
+            </filter>
+            <action>
+                <set var="team_2" value="team_2-1"/>
+                <set var="game2_state" value="game2_state+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <region id="team1-switch"/>
+            </filter>
+            <action>
+                <message fade-in="1s" stay="3s" fade-out="1s">
+                    <title>{"text": "Pull the rope!", "color": "gold"}</title>
+                    <subtitle>{"text": "Drop all your items as fast as you can!", "color": "aqua"}</subtitle>
+                </message>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <region id="team2-switch"/>
+            </filter>
+            <action>
+                <message fade-in="1s" stay="3s" fade-out="1s">
+                    <title>{"text": "Pull the rope!", "color": "gold"}</title>
+                    <subtitle>{"text": "Drop all your items as fast as you can!", "color": "aqua"}</subtitle>
+                </message>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <region id="portal1"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="aux_tp" value="aux_tp+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <region id="1st-game-finish"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game1_finishers" value="game1_finishers+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">1</variable>
+                    <variable var="game4_step">0</variable>
+                    <region id="step1"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence1" value="sequence1+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">1</variable>
+                    <variable var="game4_step">1</variable>
+                    <region id="step2"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence1" value="sequence1+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">1</variable>
+                    <variable var="game4_step">2</variable>
+                    <region id="step3"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence1" value="sequence1+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">1</variable>
+                    <variable var="game4_step">3</variable>
+                    <region id="step4"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence1" value="sequence1+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">1</variable>
+                    <variable var="game4_step">4</variable>
+                    <region id="step5"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence1" value="sequence1+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">1</variable>
+                    <variable var="game4_step">5</variable>
+                    <region id="step6"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence1" value="sequence1+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">1</variable>
+                    <variable var="game4_step">6</variable>
+                    <region id="step7"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence1" value="sequence1+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">1</variable>
+                    <variable var="game4_step">7</variable>
+                    <region id="step8"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence1" value="sequence1+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">1</variable>
+                    <variable var="game4_step">8</variable>
+                    <region id="step9"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence1" value="sequence1+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">1</variable>
+                    <variable var="game4_step">9</variable>
+                    <region id="step10"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence1" value="sequence1+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">1</variable>
+                    <variable var="game4_step">10</variable>
+                    <region id="step11"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence1" value="sequence1+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">1</variable>
+                    <variable var="game4_step">11</variable>
+                    <region id="step12"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence1" value="sequence1+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">2</variable>
+                    <variable var="game4_step">0</variable>
+                    <region id="step1"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence2" value="sequence2+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">2</variable>
+                    <variable var="game4_step">1</variable>
+                    <region id="step2"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence2" value="sequence2+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">2</variable>
+                    <variable var="game4_step">2</variable>
+                    <region id="step3"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence2" value="sequence2+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">2</variable>
+                    <variable var="game4_step">3</variable>
+                    <region id="step4"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence2" value="sequence2+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">2</variable>
+                    <variable var="game4_step">4</variable>
+                    <region id="step5"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence2" value="sequence2+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">2</variable>
+                    <variable var="game4_step">5</variable>
+                    <region id="step6"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence2" value="sequence2+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">2</variable>
+                    <variable var="game4_step">6</variable>
+                    <region id="step7"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence2" value="sequence2+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">2</variable>
+                    <variable var="game4_step">7</variable>
+                    <region id="step8"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence2" value="sequence2+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">2</variable>
+                    <variable var="game4_step">8</variable>
+                    <region id="step9"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence2" value="sequence2+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">2</variable>
+                    <variable var="game4_step">9</variable>
+                    <region id="step10"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence2" value="sequence2+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">2</variable>
+                    <variable var="game4_step">10</variable>
+                    <region id="step11"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence2" value="sequence2+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">2</variable>
+                    <variable var="game4_step">11</variable>
+                    <region id="step12"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence2" value="sequence2+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">3</variable>
+                    <variable var="game4_step">0</variable>
+                    <region id="step1"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence3" value="sequence3+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">3</variable>
+                    <variable var="game4_step">1</variable>
+                    <region id="step2"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence3" value="sequence3+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">3</variable>
+                    <variable var="game4_step">2</variable>
+                    <region id="step3"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence3" value="sequence3+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">3</variable>
+                    <variable var="game4_step">3</variable>
+                    <region id="step4"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence3" value="sequence3+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">3</variable>
+                    <variable var="game4_step">4</variable>
+                    <region id="step5"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence3" value="sequence3+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">3</variable>
+                    <variable var="game4_step">5</variable>
+                    <region id="step6"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence3" value="sequence3+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">3</variable>
+                    <variable var="game4_step">6</variable>
+                    <region id="step7"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence3" value="sequence3+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">3</variable>
+                    <variable var="game4_step">7</variable>
+                    <region id="step8"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence3" value="sequence3+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">3</variable>
+                    <variable var="game4_step">8</variable>
+                    <region id="step9"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence3" value="sequence3+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">3</variable>
+                    <variable var="game4_step">9</variable>
+                    <region id="step10"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence3" value="sequence3+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">3</variable>
+                    <variable var="game4_step">10</variable>
+                    <region id="step11"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence3" value="sequence3+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">3</variable>
+                    <variable var="game4_step">11</variable>
+                    <region id="step12"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence3" value="sequence3+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">4</variable>
+                    <variable var="game4_step">0</variable>
+                    <region id="step1"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence4" value="sequence4+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">4</variable>
+                    <variable var="game4_step">1</variable>
+                    <region id="step2"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence4" value="sequence4+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">4</variable>
+                    <variable var="game4_step">2</variable>
+                    <region id="step3"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence4" value="sequence4+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">4</variable>
+                    <variable var="game4_step">3</variable>
+                    <region id="step4"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence4" value="sequence4+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">4</variable>
+                    <variable var="game4_step">4</variable>
+                    <region id="step5"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence4" value="sequence4+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">4</variable>
+                    <variable var="game4_step">5</variable>
+                    <region id="step6"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence4" value="sequence4+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">4</variable>
+                    <variable var="game4_step">6</variable>
+                    <region id="step7"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence4" value="sequence4+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">4</variable>
+                    <variable var="game4_step">7</variable>
+                    <region id="step8"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence4" value="sequence4+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">4</variable>
+                    <variable var="game4_step">8</variable>
+                    <region id="step9"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence4" value="sequence4+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">4</variable>
+                    <variable var="game4_step">9</variable>
+                    <region id="step10"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence4" value="sequence4+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">4</variable>
+                    <variable var="game4_step">10</variable>
+                    <region id="step11"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence4" value="sequence4+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">4</variable>
+                    <variable var="game4_step">11</variable>
+                    <region id="step12"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence4" value="sequence4+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">5</variable>
+                    <variable var="game4_step">0</variable>
+                    <region id="step1"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence5" value="sequence5+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">5</variable>
+                    <variable var="game4_step">1</variable>
+                    <region id="step2"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence5" value="sequence5+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">5</variable>
+                    <variable var="game4_step">2</variable>
+                    <region id="step3"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence5" value="sequence5+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">5</variable>
+                    <variable var="game4_step">3</variable>
+                    <region id="step4"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence5" value="sequence5+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">5</variable>
+                    <variable var="game4_step">4</variable>
+                    <region id="step5"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence5" value="sequence5+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">5</variable>
+                    <variable var="game4_step">5</variable>
+                    <region id="step6"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence5" value="sequence5+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">5</variable>
+                    <variable var="game4_step">6</variable>
+                    <region id="step7"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence5" value="sequence5+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">5</variable>
+                    <variable var="game4_step">7</variable>
+                    <region id="step8"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence5" value="sequence5+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">5</variable>
+                    <variable var="game4_step">8</variable>
+                    <region id="step9"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence5" value="sequence5+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">5</variable>
+                    <variable var="game4_step">9</variable>
+                    <region id="step10"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence5" value="sequence5+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">5</variable>
+                    <variable var="game4_step">10</variable>
+                    <region id="step11"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence5" value="sequence5+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">5</variable>
+                    <variable var="game4_step">11</variable>
+                    <region id="step12"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence5" value="sequence5+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">6</variable>
+                    <variable var="game4_step">0</variable>
+                    <region id="step1"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence6" value="sequence6+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">6</variable>
+                    <variable var="game4_step">1</variable>
+                    <region id="step2"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence6" value="sequence6+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">6</variable>
+                    <variable var="game4_step">2</variable>
+                    <region id="step3"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence6" value="sequence6+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">6</variable>
+                    <variable var="game4_step">3</variable>
+                    <region id="step4"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence6" value="sequence6+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">6</variable>
+                    <variable var="game4_step">4</variable>
+                    <region id="step5"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence6" value="sequence6+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">6</variable>
+                    <variable var="game4_step">5</variable>
+                    <region id="step6"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence6" value="sequence6+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">6</variable>
+                    <variable var="game4_step">6</variable>
+                    <region id="step7"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence6" value="sequence6+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">6</variable>
+                    <variable var="game4_step">7</variable>
+                    <region id="step8"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence6" value="sequence6+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">6</variable>
+                    <variable var="game4_step">8</variable>
+                    <region id="step9"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence6" value="sequence6+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">6</variable>
+                    <variable var="game4_step">9</variable>
+                    <region id="step10"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence6" value="sequence6+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">6</variable>
+                    <variable var="game4_step">10</variable>
+                    <region id="step11"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence6" value="sequence6+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">6</variable>
+                    <variable var="game4_step">11</variable>
+                    <region id="step12"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence6" value="sequence6+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">7</variable>
+                    <variable var="game4_step">0</variable>
+                    <region id="step1"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence7" value="sequence7+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">7</variable>
+                    <variable var="game4_step">1</variable>
+                    <region id="step2"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence7" value="sequence7+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">7</variable>
+                    <variable var="game4_step">2</variable>
+                    <region id="step3"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence7" value="sequence7+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">7</variable>
+                    <variable var="game4_step">3</variable>
+                    <region id="step4"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence7" value="sequence7+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">7</variable>
+                    <variable var="game4_step">4</variable>
+                    <region id="step5"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence7" value="sequence7+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">7</variable>
+                    <variable var="game4_step">5</variable>
+                    <region id="step6"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence7" value="sequence7+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">7</variable>
+                    <variable var="game4_step">6</variable>
+                    <region id="step7"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence7" value="sequence7+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">7</variable>
+                    <variable var="game4_step">7</variable>
+                    <region id="step8"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence7" value="sequence7+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">7</variable>
+                    <variable var="game4_step">8</variable>
+                    <region id="step9"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence7" value="sequence7+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">7</variable>
+                    <variable var="game4_step">9</variable>
+                    <region id="step10"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence7" value="sequence7+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">7</variable>
+                    <variable var="game4_step">10</variable>
+                    <region id="step11"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence7" value="sequence7+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">7</variable>
+                    <variable var="game4_step">11</variable>
+                    <region id="step12"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence7" value="sequence7+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">8</variable>
+                    <variable var="game4_step">0</variable>
+                    <region id="step1"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence8" value="sequence8+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">8</variable>
+                    <variable var="game4_step">1</variable>
+                    <region id="step2"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence8" value="sequence8+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">8</variable>
+                    <variable var="game4_step">2</variable>
+                    <region id="step3"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence8" value="sequence8+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">8</variable>
+                    <variable var="game4_step">3</variable>
+                    <region id="step4"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence8" value="sequence8+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">8</variable>
+                    <variable var="game4_step">4</variable>
+                    <region id="step5"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence8" value="sequence8+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">8</variable>
+                    <variable var="game4_step">5</variable>
+                    <region id="step6"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence8" value="sequence8+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">8</variable>
+                    <variable var="game4_step">6</variable>
+                    <region id="step7"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence8" value="sequence8+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">8</variable>
+                    <variable var="game4_step">7</variable>
+                    <region id="step8"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence8" value="sequence8+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">8</variable>
+                    <variable var="game4_step">8</variable>
+                    <region id="step9"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence8" value="sequence8+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">8</variable>
+                    <variable var="game4_step">9</variable>
+                    <region id="step10"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence8" value="sequence8+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">8</variable>
+                    <variable var="game4_step">10</variable>
+                    <region id="step11"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence8" value="sequence8+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">8</variable>
+                    <variable var="game4_step">11</variable>
+                    <region id="step12"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence8" value="sequence8+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">9</variable>
+                    <variable var="game4_step">0</variable>
+                    <region id="step1"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence9" value="sequence9+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">9</variable>
+                    <variable var="game4_step">1</variable>
+                    <region id="step2"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence9" value="sequence9+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">9</variable>
+                    <variable var="game4_step">2</variable>
+                    <region id="step3"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence9" value="sequence9+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">9</variable>
+                    <variable var="game4_step">3</variable>
+                    <region id="step4"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence9" value="sequence9+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">9</variable>
+                    <variable var="game4_step">4</variable>
+                    <region id="step5"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence9" value="sequence9+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">9</variable>
+                    <variable var="game4_step">5</variable>
+                    <region id="step6"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence9" value="sequence9+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">9</variable>
+                    <variable var="game4_step">6</variable>
+                    <region id="step7"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence9" value="sequence9+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">9</variable>
+                    <variable var="game4_step">7</variable>
+                    <region id="step8"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence9" value="sequence9+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">9</variable>
+                    <variable var="game4_step">8</variable>
+                    <region id="step9"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence9" value="sequence9+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">9</variable>
+                    <variable var="game4_step">9</variable>
+                    <region id="step10"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence9" value="sequence9+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">9</variable>
+                    <variable var="game4_step">10</variable>
+                    <region id="step11"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence9" value="sequence9+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">9</variable>
+                    <variable var="game4_step">11</variable>
+                    <region id="step12"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_step" value="game4_step+1"/>
+                <set var="sequence9" value="sequence9+1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game1_state">-1</variable>
+                    <region id="game1-start-region"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game1_state" value="0"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">0</variable>
+                    <variable var="sequence_lock">0</variable>
+                    <region id="block11"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_sequence" value="1"/>
+                <set var="sequence_lock" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">0</variable>
+                    <variable var="sequence_lock">0</variable>
+                    <region id="block12"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_sequence" value="2"/>
+                <set var="sequence_lock" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">0</variable>
+                    <variable var="sequence_lock">0</variable>
+                    <region id="block13"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_sequence" value="3"/>
+                <set var="sequence_lock" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">0</variable>
+                    <variable var="sequence_lock">0</variable>
+                    <region id="block14"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_sequence" value="4"/>
+                <set var="sequence_lock" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">0</variable>
+                    <variable var="sequence_lock">0</variable>
+                    <region id="block15"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_sequence" value="5"/>
+                <set var="sequence_lock" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">0</variable>
+                    <variable var="sequence_lock">0</variable>
+                    <region id="block16"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_sequence" value="6"/>
+                <set var="sequence_lock" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">0</variable>
+                    <variable var="sequence_lock">0</variable>
+                    <region id="block17"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_sequence" value="7"/>
+                <set var="sequence_lock" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">0</variable>
+                    <variable var="sequence_lock">0</variable>
+                    <region id="block18"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_sequence" value="8"/>
+                <set var="sequence_lock" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <variable var="game4_sequence">0</variable>
+                    <variable var="sequence_lock">0</variable>
+                    <region id="block19"/>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game4_sequence" value="9"/>
+                <set var="sequence_lock" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="match">
+            <filter>
+                <after duration="12s" filter="game1-state-0"/>
+            </filter>
+            <action>
+                <set var="game1_state" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="match">
+            <filter>
+                <after duration="3s">
+                    <all>
+                        <variable var="game1_state">[1,5]</variable>
+                        <variable var="eye_state">0</variable>
+                    </all>
+                </after>
+            </filter>
+            <action>
+                <set var="eye_state" value="1"/>
+                <set var="game1_state" value="game1_state+1"/>
+                <message fade-in="0" stay="2s" fade-out="1s">
+                    <text>{"text": "Green Light!", "color": "green"}</text>
+                    <subtitle>{"text": "Run as far as you can!", "color": "green"}</subtitle>
+                </message>
+            </action>
+        </trigger>
+
+        <trigger scope="match">
+            <filter>
+                <after duration="3s">
+                    <all>
+                        <variable var="game1_state">[1,6]</variable>
+                        <variable var="eye_state">1</variable>
+                    </all>
+                </after>
+            </filter>
+            <action>
+                <set var="eye_state" value="0"/>
+                <message fade-in="0" stay="2s" fade-out="1s">
+                    <text>{"text": "Red Light!", "color": "red"}</text>
+                    <subtitle>{"text": "Shift while standing still!", "color": "red"}</subtitle>
+                </message>
+            </action>
+        </trigger>
+
+        <trigger scope="player" action="shift-kit">
+            <filter>
+                <all>
+                    <region id="1st-game-play"/>
+                    <crouching/>
+                </all>
+            </filter>
+        </trigger>
+
+        <trigger scope="player" action="wither-kit">
+            <filter>
+                <all>
+                    <region id="1st-game-play"/>
+                    <variable var="eye_state">0</variable>
+                    <any>
+                        <not>
+                            <grounded/>
+                        </not>
+                        <walking/>
+                        <sprinting/>
+                    </any>
+                </all>
+            </filter>
+        </trigger>
+        <trigger scope="player" action="wither-kit2">
+            <filter>
+                <all>
+                    <region id="1st-game-play"/>
+                    <variable var="game1_state">6</variable>
+                    <variable var="game1_finishers">[32,oo)</variable>
+                </all>
+            </filter>
+        </trigger>
+    </actions>
+    <destroyables>
+        <destroyable name="glass-monu" show="false" owner="runners" material="166" region="1st-game-barrier" modes="air-wall"/>
+        <destroyable name="muro-portal" show="false" owner="runners" material="166" region="portal-wall" modes="portalair"/>
+        <destroyable name="team1-wool" show="false" owner="test" materials="wool;159:4;166;85;192;171:4;72" region="team1-platform" modes="airteam2"/>
+        <destroyable name="team2-wool" show="false" owner="how" materials="wool;159:4;166;85;192;171:4;72" region="team2-platform" modes="airteam1"/>
+        <destroyable name="glass-11" show="false" owner="runners" material="glass" region="glass-11" modes="air11 air21 air41 air51 air71 air81"/>
+        <destroyable name="glass-12" show="false" owner="runners" material="glass" region="glass-12" modes="air31 air61 air91"/>
+        <destroyable name="glass-21" show="false" owner="runners" material="glass" region="glass-21" modes="air12 air32 air52 air72 air92"/>
+        <destroyable name="glass-22" show="false" owner="runners" material="glass" region="glass-22" modes="air22 air42 air62 air82"/>
+        <destroyable name="glass-31" show="false" owner="runners" material="glass" region="glass-31" modes="air23 air63 air93"/>
+        <destroyable name="glass-32" show="false" owner="runners" material="glass" region="glass-32" modes="air13 air33 air43 air53 air73 air83"/>
+        <destroyable name="glass-41" show="false" owner="runners" material="glass" region="glass-41" modes="air34 air44 air84 air94"/>
+        <destroyable name="glass-42" show="false" owner="runners" material="glass" region="glass-42" modes="air14 air24 air54 air64 air74"/>
+        <destroyable name="glass-51" show="false" owner="runners" material="glass" region="glass-51" modes="air35 air55 air75 air95"/>
+        <destroyable name="glass-52" show="false" owner="runners" material="glass" region="glass-52" modes="air15 air25 air45 air65 air85"/>
+        <destroyable name="glass-61" show="false" owner="runners" material="glass" region="glass-61" modes="air26 air36 air56 air66"/>
+        <destroyable name="glass-62" show="false" owner="runners" material="glass" region="glass-62" modes="air16 air46 air76 air86 air96"/>
+        <destroyable name="glass-71" show="false" owner="runners" material="glass" region="glass-71" modes="air17 air57"/>
+        <destroyable name="glass-72" show="false" owner="runners" material="glass" region="glass-72" modes="air27 air37 air47 air67 air77 air87 air97"/>
+        <destroyable name="glass-81" show="false" owner="runners" material="glass" region="glass-81" modes="air88 air98"/>
+        <destroyable name="glass-82" show="false" owner="runners" material="glass" region="glass-82" modes="air18 air28 air38 air48 air58 air68 air78"/>
+        <destroyable name="glass-91" show="false" owner="runners" material="glass" region="glass-91" modes="air29 air49 air69"/>
+        <destroyable name="glass-92" show="false" owner="runners" material="glass" region="glass-92" modes="air19 air39 air59 air79 air89 air99"/>
+        <destroyable name="glass-101" show="false" owner="runners" material="glass" region="glass-101" modes="air210 air310 air410 air610 air810 air910"/>
+        <destroyable name="glass-102" show="false" owner="runners" material="glass" region="glass-102" modes="air110 air510 air710"/>
+        <destroyable name="glass-111" show="false" owner="runners" material="glass" region="glass-111" modes="air311 air411 air511 air611 air711 air811"/>
+        <destroyable name="glass-112" show="false" owner="runners" material="glass" region="glass-112" modes="air111 air211 air911"/>
+        <destroyable name="glass-121" show="false" owner="runners" material="glass" region="glass-121" modes="air212 air812 air912"/>
+        <destroyable name="glass-122" show="false" owner="runners" material="glass" region="glass-122" modes="air112 air312 air412 air512 air612 air712"/>
+        <destroyable name="eyes" show="false" owner="host" material="35:14" region="eyes-region" modes="green_eyes1 red_eyes1 green_eyes2 red_eyes2 green_eyes3 red_eyes3 green_eyes4 red_eyes4 green_eyes5 red_eyes5"/>
+        <destroyable name="winning monu" show="true" owner="host" material="sponge" region="win-region"/>
+    </destroyables>
+    <modes>
+        <mode id="air-wall"    after="15s" filter="game1-state-0" material="air" name="`3First game is starting"/>
+        <mode id="green_eyes1" after="0s"  filter="game1-state-2" material="35:5"/>
+        <mode id="red_eyes1"   after="3s"  filter="game1-state-2" material="35:14" name="`4RED LIGHT" />
+        <mode id="green_eyes2" after="0s"  filter="game1-state-3" material="35:5" name="`2GREEN LIGHT"/>
+        <mode id="red_eyes2"   after="3s"  filter="game1-state-3" material="35:14" name="`4RED LIGHT" />
+        <mode id="green_eyes3" after="0s"  filter="game1-state-4" material="35:5" name="`2GREEN LIGHT"/>
+        <mode id="red_eyes3"   after="3s"  filter="game1-state-4" material="35:14" name="`4RED LIGHT" />
+        <mode id="green_eyes4" after="0s"  filter="game1-state-5" material="35:5" name="`2GREEN LIGHT"/>
+        <mode id="red_eyes4"   after="3s"  filter="game1-state-5" material="35:14" name="`4RED LIGHT" />
+        <mode id="green_eyes5" after="0s"  filter="game1-state-6" material="35:5" name="`2GREEN LIGHT"/>
+        <mode id="red_eyes5"   after="3s"  filter="game1-state-6" material="35:14" name="`4RED LIGHT" />
+        <mode id="portalair"   after="0s"  filter="count_tp" material="air"/>
+        <mode id="airteam1"    after="2s" filter="team1-done" material="air"/>
+        <mode id="airteam2"    after="2s" filter="team2-done" material="air"/>
+        <mode id="air11"    after="0s" filter="sequence1step1" material="air"/>
+        <mode id="air12"    after="0s" filter="sequence1step2" material="air"/>
+        <mode id="air13"    after="0s" filter="sequence1step3" material="air"/>
+        <mode id="air14"    after="0s" filter="sequence1step4" material="air"/>
+        <mode id="air15"    after="0s" filter="sequence1step5" material="air"/>
+        <mode id="air16"    after="0s" filter="sequence1step6" material="air"/>
+        <mode id="air17"    after="0s" filter="sequence1step7" material="air"/>
+        <mode id="air18"    after="0s" filter="sequence1step8" material="air"/>
+        <mode id="air19"    after="0s" filter="sequence1step9" material="air"/>
+        <mode id="air110"    after="0s" filter="sequence1step10" material="air"/>
+        <mode id="air111"    after="0s" filter="sequence1step11" material="air"/>
+        <mode id="air112"    after="0s" filter="sequence1step12" material="air"/>
+        <mode id="air21"    after="0s" filter="sequence2step1" material="air"/>
+        <mode id="air22"    after="0s" filter="sequence2step2" material="air"/>
+        <mode id="air23"    after="0s" filter="sequence2step3" material="air"/>
+        <mode id="air24"    after="0s" filter="sequence2step4" material="air"/>
+        <mode id="air25"    after="0s" filter="sequence2step5" material="air"/>
+        <mode id="air26"    after="0s" filter="sequence2step6" material="air"/>
+        <mode id="air27"    after="0s" filter="sequence2step7" material="air"/>
+        <mode id="air28"    after="0s" filter="sequence2step8" material="air"/>
+        <mode id="air29"    after="0s" filter="sequence2step9" material="air"/>
+        <mode id="air210"    after="0s" filter="sequence2step10" material="air"/>
+        <mode id="air211"    after="0s" filter="sequence2step11" material="air"/>
+        <mode id="air212"    after="0s" filter="sequence2step12" material="air"/>
+        <mode id="air31"    after="0s" filter="sequence3step1" material="air"/>
+        <mode id="air32"    after="0s" filter="sequence3step2" material="air"/>
+        <mode id="air33"    after="0s" filter="sequence3step3" material="air"/>
+        <mode id="air34"    after="0s" filter="sequence3step4" material="air"/>
+        <mode id="air35"    after="0s" filter="sequence3step5" material="air"/>
+        <mode id="air36"    after="0s" filter="sequence3step6" material="air"/>
+        <mode id="air37"    after="0s" filter="sequence3step7" material="air"/>
+        <mode id="air38"    after="0s" filter="sequence3step8" material="air"/>
+        <mode id="air39"    after="0s" filter="sequence3step9" material="air"/>
+        <mode id="air310"    after="0s" filter="sequence3step10" material="air"/>
+        <mode id="air311"    after="0s" filter="sequence3step11" material="air"/>
+        <mode id="air312"    after="0s" filter="sequence3step12" material="air"/>
+        <mode id="air41"    after="0s" filter="sequence4step1" material="air"/>
+        <mode id="air42"    after="0s" filter="sequence4step2" material="air"/>
+        <mode id="air43"    after="0s" filter="sequence4step3" material="air"/>
+        <mode id="air44"    after="0s" filter="sequence4step4" material="air"/>
+        <mode id="air45"    after="0s" filter="sequence4step5" material="air"/>
+        <mode id="air46"    after="0s" filter="sequence4step6" material="air"/>
+        <mode id="air47"    after="0s" filter="sequence4step7" material="air"/>
+        <mode id="air48"    after="0s" filter="sequence4step8" material="air"/>
+        <mode id="air49"    after="0s" filter="sequence4step9" material="air"/>
+        <mode id="air410"    after="0s" filter="sequence4step10" material="air"/>
+        <mode id="air411"    after="0s" filter="sequence4step11" material="air"/>
+        <mode id="air412"    after="0s" filter="sequence4step12" material="air"/>
+        <mode id="air51"    after="0s" filter="sequence5step1" material="air"/>
+        <mode id="air52"    after="0s" filter="sequence5step2" material="air"/>
+        <mode id="air53"    after="0s" filter="sequence5step3" material="air"/>
+        <mode id="air54"    after="0s" filter="sequence5step4" material="air"/>
+        <mode id="air55"    after="0s" filter="sequence5step5" material="air"/>
+        <mode id="air56"    after="0s" filter="sequence5step6" material="air"/>
+        <mode id="air57"    after="0s" filter="sequence5step7" material="air"/>
+        <mode id="air58"    after="0s" filter="sequence5step8" material="air"/>
+        <mode id="air59"    after="0s" filter="sequence5step9" material="air"/>
+        <mode id="air510"    after="0s" filter="sequence5step10" material="air"/>
+        <mode id="air511"    after="0s" filter="sequence5step11" material="air"/>
+        <mode id="air512"    after="0s" filter="sequence5step12" material="air"/>
+        <mode id="air61"    after="0s" filter="sequence6step1" material="air"/>
+        <mode id="air62"    after="0s" filter="sequence6step2" material="air"/>
+        <mode id="air63"    after="0s" filter="sequence6step3" material="air"/>
+        <mode id="air64"    after="0s" filter="sequence6step4" material="air"/>
+        <mode id="air65"    after="0s" filter="sequence6step5" material="air"/>
+        <mode id="air66"    after="0s" filter="sequence6step6" material="air"/>
+        <mode id="air67"    after="0s" filter="sequence6step7" material="air"/>
+        <mode id="air68"    after="0s" filter="sequence6step8" material="air"/>
+        <mode id="air69"    after="0s" filter="sequence6step9" material="air"/>
+        <mode id="air610"    after="0s" filter="sequence6step10" material="air"/>
+        <mode id="air611"    after="0s" filter="sequence6step11" material="air"/>
+        <mode id="air612"    after="0s" filter="sequence6step12" material="air"/>
+        <mode id="air71"    after="0s" filter="sequence7step1" material="air"/>
+        <mode id="air72"    after="0s" filter="sequence7step2" material="air"/>
+        <mode id="air73"    after="0s" filter="sequence7step3" material="air"/>
+        <mode id="air74"    after="0s" filter="sequence7step4" material="air"/>
+        <mode id="air75"    after="0s" filter="sequence7step5" material="air"/>
+        <mode id="air76"    after="0s" filter="sequence7step6" material="air"/>
+        <mode id="air77"    after="0s" filter="sequence7step7" material="air"/>
+        <mode id="air78"    after="0s" filter="sequence7step8" material="air"/>
+        <mode id="air79"    after="0s" filter="sequence7step9" material="air"/>
+        <mode id="air710"    after="0s" filter="sequence7step10" material="air"/>
+        <mode id="air711"    after="0s" filter="sequence7step11" material="air"/>
+        <mode id="air712"    after="0s" filter="sequence7step12" material="air"/>
+        <mode id="air81"    after="0s" filter="sequence8step1" material="air"/>
+        <mode id="air82"    after="0s" filter="sequence8step2" material="air"/>
+        <mode id="air83"    after="0s" filter="sequence8step3" material="air"/>
+        <mode id="air84"    after="0s" filter="sequence8step4" material="air"/>
+        <mode id="air85"    after="0s" filter="sequence8step5" material="air"/>
+        <mode id="air86"    after="0s" filter="sequence8step6" material="air"/>
+        <mode id="air87"    after="0s" filter="sequence8step7" material="air"/>
+        <mode id="air88"    after="0s" filter="sequence8step8" material="air"/>
+        <mode id="air89"    after="0s" filter="sequence8step9" material="air"/>
+        <mode id="air810"    after="0s" filter="sequence8step10" material="air"/>
+        <mode id="air811"    after="0s" filter="sequence8step11" material="air"/>
+        <mode id="air812"    after="0s" filter="sequence8step12" material="air"/>
+        <mode id="air91"    after="0s" filter="sequence9step1" material="air"/>
+        <mode id="air92"    after="0s" filter="sequence9step2" material="air"/>
+        <mode id="air93"    after="0s" filter="sequence9step3" material="air"/>
+        <mode id="air94"    after="0s" filter="sequence9step4" material="air"/>
+        <mode id="air95"    after="0s" filter="sequence9step5" material="air"/>
+        <mode id="air96"    after="0s" filter="sequence9step6" material="air"/>
+        <mode id="air97"    after="0s" filter="sequence9step7" material="air"/>
+        <mode id="air98"    after="0s" filter="sequence9step8" material="air"/>
+        <mode id="air99"    after="0s" filter="sequence9step9" material="air"/>
+        <mode id="air910"    after="0s" filter="sequence9step10" material="air"/>
+        <mode id="air911"    after="0s" filter="sequence9step11" material="air"/>
+        <mode id="air912"    after="0s" filter="sequence9step12" material="air"/>
+    </modes>
+    <portals>
+        <portal forward="first16" destination="portal1-end" yaw="-90"/>
+        <portal forward="won-t1" destination="team1-won" yaw="0"/>
+        <portal forward="won-t2" destination="team2-won" yaw="0"/>
+        <portal region="portal2" yaw="-90">
+            <destination><region id="portal2-end"/></destination>
+        </portal>
+    </portals>
+    <spawners>
+    </spawners>
+    <itemremove>
+        <item>leather chestplate</item>
+        <item>leather leggings</item>
+        <item>leather boots</item>
+        <item>skull item</item>
+        <item>emerald block</item>
+    </itemremove>
+    <hunger>
+        <depletion>off</depletion>
+    </hunger>
+    <damage>
+    </damage>
+    <gamerules>
+        <naturalRegeneration>false</naturalRegeneration>
+    </gamerules>
+</map>
