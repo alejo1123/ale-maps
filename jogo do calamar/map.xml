@@ -1,6 +1,6 @@
 <map proto="1.4.2" game="Death Run">
     <name>Jogo do Calamar</name>
-    <version>1.0.19</version>
+    <version>1.0.20</version>
     <objective>Survive the obstacle course as the Runners, or eliminate the enemy as Death</objective>
     <created>2022-10-03</created>
     <authors>
@@ -267,102 +267,126 @@
     <filters>
         <any id="game4-death">
             <cuboid min="187,32,-150" max="220,4,-75"/>
-            <all>
-                <variable var="step1">1</variable>
-                <region id="glass-11"/>
-            </all>
-            <all>
-                <variable var="step1">2</variable>
-                <region id="glass-12"/>
-            </all>
-            <all>
-                <variable var="step2">1</variable>
-                <region id="glass-21" />
-            </all>
-            <all>
-                <variable var="step2">2</variable>
-                <region id="glass-22" />
-            </all>
-            <all>
-                <variable var="step3">1</variable>
-                <region id="glass-31" />
-            </all>
-            <all>
-                <variable var="step3">2</variable>
-                <region id="glass-32" />
-            </all>
-            <all>
-                <variable var="step4">1</variable>
-                <region id="glass-41" />
-            </all>
-            <all>
-                <variable var="step4">2</variable>
-                <region id="glass-42" />
-            </all>
-            <all>
-                <variable var="step5">1</variable>
-                <region id="glass-51" />
-            </all>
-            <all>
-                <variable var="step5">2</variable>
-                <region id="glass-52" />
-            </all>
-            <all>
-                <variable var="step6">1</variable>
-                <region id="glass-61" />
-            </all>
-            <all>
-                <variable var="step6">2</variable>
-                <region id="glass-62" />
-            </all>
-            <all>
-                <variable var="step7">1</variable>
-                <region id="glass-71" />
-            </all>
-            <all>
-                <variable var="step7">2</variable>
-                <region id="glass-72" />
-            </all>
-            <all>
-                <variable var="step8">1</variable>
-                <region id="glass-81" />
-            </all>
-            <all>
-                <variable var="step8">2</variable>
-                <region id="glass-82" />
-            </all>
-            <all>
-                <variable var="step9">1</variable>
-                <region id="glass-91" />
-            </all>
-            <all>
-                <variable var="step9">2</variable>
-                <region id="glass-92" />
-            </all>
-            <all>
-                <variable var="step10">1</variable>
-                <region id="glass-101" />
-            </all>
-            <all>
-                <variable var="step10">2</variable>
-                <region id="glass-102" />
-            </all>
-            <all>
-                <variable var="step11">1</variable>
-                <region id="glass-111" />
-            </all>
-            <all>
-                <variable var="step11">2</variable>
-                <region id="glass-112" />
-            </all>
-            <all>
-                <variable var="step12">1</variable>
-                <region id="glass-121" />
-            </all>
-            <all>
-                <variable var="step12">2</variable>
-                <region id="glass-122" />
-            </all>
+            <any id="enter-wrong-step1">
+                <all>
+                    <variable var="g4_step1">1</variable>
+                    <region id="glass-11"/>
+                </all>
+                <all>
+                    <variable var="g4_step1">2</variable>
+                    <region id="glass-12"/>
+                </all>
+            </any>
+            <any id="enter-wrong-step2">
+                <all>
+                    <variable var="g4_step2">1</variable>
+                    <region id="glass-21" />
+                </all>
+                <all>
+                    <variable var="g4_step2">2</variable>
+                    <region id="glass-22" />
+                </all>
+            </any>
+            <any id="enter-wrong-step3">
+                <all>
+                    <variable var="g4_step3">1</variable>
+                    <region id="glass-31" />
+                </all>
+                <all>
+                    <variable var="g4_step3">2</variable>
+                    <region id="glass-32" />
+                </all>
+            </any>
+            <any id="enter-wrong-step4">
+                <all>
+                    <variable var="g4_step4">1</variable>
+                    <region id="glass-41" />
+                </all>
+                <all>
+                    <variable var="g4_step4">2</variable>
+                    <region id="glass-42" />
+                </all>
+            </any>
+            <any id="enter-wrong-step5">
+                <all>
+                    <variable var="g4_step5">1</variable>
+                    <region id="glass-51" />
+                </all>
+                <all>
+                    <variable var="g4_step5">2</variable>
+                    <region id="glass-52" />
+                </all>
+            </any>
+            <any id="enter-wrong-step6">
+                <all>
+                    <variable var="g4_step6">1</variable>
+                    <region id="glass-61" />
+                </all>
+                <all>
+                    <variable var="g4_step6">2</variable>
+                    <region id="glass-62" />
+                </all>
+            </any>
+            <any id="enter-wrong-step7">
+                <all>
+                    <variable var="g4_step7">1</variable>
+                    <region id="glass-71" />
+                </all>
+                <all>
+                    <variable var="g4_step7">2</variable>
+                    <region id="glass-72" />
+                </all>
+            </any>
+            <any id="enter-wrong-step8">
+                <all>
+                    <variable var="g4_step8">1</variable>
+                    <region id="glass-81" />
+                </all>
+                <all>
+                    <variable var="g4_step8">2</variable>
+                    <region id="glass-82" />
+                </all>
+            </any>
+            <any id="enter-wrong-step9">
+                <all>
+                    <variable var="g4_step9">1</variable>
+                    <region id="glass-91" />
+                </all>
+                <all>
+                    <variable var="g4_step9">2</variable>
+                    <region id="glass-92" />
+                </all>
+            </any>
+            <any id="enter-wrong-step10">
+                <all>
+                    <variable var="g4_step10">1</variable>
+                    <region id="glass-101" />
+                </all>
+                <all>
+                    <variable var="g4_step10">2</variable>
+                    <region id="glass-102" />
+                </all>
+            </any>
+            <any id="enter-wrong-step11">
+                <all>
+                    <variable var="g4_step11">1</variable>
+                    <region id="glass-111" />
+                </all>
+                <all>
+                    <variable var="g4_step11">2</variable>
+                    <region id="glass-112" />
+                </all>
+            </any>
+            <any id="enter-wrong-step12">
+                <all>
+                    <variable var="g4_step12">1</variable>
+                    <region id="glass-121" />
+                </all>
+                <all>
+                    <variable var="g4_step12">2</variable>
+                    <region id="glass-122" />
+                </all>
+            </any>
         </any>
         <union id="game4-playable">
             <cuboid min="187,32,-150" max="220,4,-75"/>
@@ -445,39 +469,122 @@
         <variable id="game2_state" scope="match" default="0"/>
         <variable id="game4_step" scope="match" default="0"/>
         <variable id="eliminado" scope="player" default="0"/>
-        <variable id="step1" scope="match" default="0"/>
-        <variable id="step2" scope="match" default="0"/>
-        <variable id="step3" scope="match" default="0"/>
-        <variable id="step4" scope="match" default="0"/>
-        <variable id="step5" scope="match" default="0"/>
-        <variable id="step6" scope="match" default="0"/>
-        <variable id="step7" scope="match" default="0"/>
-        <variable id="step8" scope="match" default="0"/>
-        <variable id="step9" scope="match" default="0"/>
-        <variable id="step10" scope="match" default="0"/>
-        <variable id="step11" scope="match" default="0"/>
-        <variable id="step12" scope="match" default="0"/>
+        <variable id="g4_step1" scope="match" default="0"/>
+        <variable id="g4_step2" scope="match" default="0"/>
+        <variable id="g4_step3" scope="match" default="0"/>
+        <variable id="g4_step4" scope="match" default="0"/>
+        <variable id="g4_step5" scope="match" default="0"/>
+        <variable id="g4_step6" scope="match" default="0"/>
+        <variable id="g4_step7" scope="match" default="0"/>
+        <variable id="g4_step8" scope="match" default="0"/>
+        <variable id="g4_step9" scope="match" default="0"/>
+        <variable id="g4_step10" scope="match" default="0"/>
+        <variable id="g4_step11" scope="match" default="0"/>
+        <variable id="g4_step12" scope="match" default="0"/>
+        <variable id="g4_struct_step1" scope="match" default="0"/>
+        <variable id="g4_struct_step2" scope="match" default="0"/>
+        <variable id="g4_struct_step3" scope="match" default="0"/>
+        <variable id="g4_struct_step4" scope="match" default="0"/>
+        <variable id="g4_struct_step5" scope="match" default="0"/>
+        <variable id="g4_struct_step6" scope="match" default="0"/>
+        <variable id="g4_struct_step7" scope="match" default="0"/>
+        <variable id="g4_struct_step8" scope="match" default="0"/>
+        <variable id="g4_struct_step9" scope="match" default="0"/>
+        <variable id="g4_struct_step10" scope="match" default="0"/>
+        <variable id="g4_struct_step11" scope="match" default="0"/>
+        <variable id="g4_struct_step12" scope="match" default="0"/>
         <variable id="eye_state" scope="match" default="0"/>  <!-- 0 = red, 1 = green -->
     </variables>
     <actions>
-
         <trigger scope="match">
             <filter>
                 <match-running/>
             </filter>
             <action>
-                <set var="step1" value="1+floor(random() * 2)"/>
-                <set var="step2" value="1+floor(random() * 2)"/>
-                <set var="step3" value="1+floor(random() * 2)"/>
-                <set var="step4" value="1+floor(random() * 2)"/>
-                <set var="step5" value="1+floor(random() * 2)"/>
-                <set var="step6" value="1+floor(random() * 2)"/>
-                <set var="step7" value="1+floor(random() * 2)"/>
-                <set var="step8" value="1+floor(random() * 2)"/>
-                <set var="step9" value="1+floor(random() * 2)"/>
-                <set var="step10" value="1+floor(random() * 2)"/>
-                <set var="step11" value="1+floor(random() * 2)"/>
-                <set var="step12" value="1+floor(random() * 2)"/>
+                <set var="g4_step1" value="1+floor(random() * 2)"/>
+                <set var="g4_step2" value="1+floor(random() * 2)"/>
+                <set var="g4_step3" value="1+floor(random() * 2)"/>
+                <set var="g4_step4" value="1+floor(random() * 2)"/>
+                <set var="g4_step5" value="1+floor(random() * 2)"/>
+                <set var="g4_step6" value="1+floor(random() * 2)"/>
+                <set var="g4_step7" value="1+floor(random() * 2)"/>
+                <set var="g4_step8" value="1+floor(random() * 2)"/>
+                <set var="g4_step9" value="1+floor(random() * 2)"/>
+                <set var="g4_step10" value="1+floor(random() * 2)"/>
+                <set var="g4_step11" value="1+floor(random() * 2)"/>
+                <set var="g4_step12" value="1+floor(random() * 2)"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="enter-wrong-step1">
+            <action>
+                <set var="g4_struct_step1" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="enter-wrong-step2">
+            <action>
+                <set var="g4_struct_step2" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="enter-wrong-step3">
+            <action>
+                <set var="g4_struct_step3" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="enter-wrong-step4">
+            <action>
+                <set var="g4_struct_step4" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="enter-wrong-step5">
+            <action>
+                <set var="g4_struct_step5" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="enter-wrong-step6">
+            <action>
+                <set var="g4_struct_step6" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="enter-wrong-step7">
+            <action>
+                <set var="g4_struct_step7" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="enter-wrong-step8">
+            <action>
+                <set var="g4_struct_step8" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="enter-wrong-step9">
+            <action>
+                <set var="g4_struct_step9" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="enter-wrong-step10">
+            <action>
+                <set var="g4_struct_step10" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="enter-wrong-step11">
+            <action>
+                <set var="g4_struct_step11" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="enter-wrong-step12">
+            <action>
+                <set var="g4_struct_step12" value="1"/>
             </action>
         </trigger>
 
@@ -914,15 +1021,26 @@
         <destroyable name="eyes" show="false" owner="host" material="35:14" region="eyes-region" modes="green_eyes1 red_eyes1 green_eyes2 red_eyes2 green_eyes3 red_eyes3 green_eyes4 red_eyes4 green_eyes5 red_eyes5"/>
         <destroyable name="winning monu" show="true" owner="host" material="sponge" region="win-region"/>
     </destroyables>
-<!--    <structures>-->
-<!--        <structure id="step1block1" region="glass-11"/>-->
-<!--        <dynamic structure="step1block1" region="glass-11">-->
-<!--            <filter>-->
-<!--                <variable var="step1">1</variable>-->
-<!--                <region>step1block1</region>-->
-<!--            </filter>-->
-<!--        </dynamic>-->
-<!--    </structures>-->
+    <structures>
+        <structure id="step1block1" region="glass-11"/>
+        <dynamic structure="step1block1">
+            <filter>
+                <any>
+                    <variable var="g4_step1">2</variable>
+                    <variable var="g4_struct_step1">0</variable>
+                </any>
+            </filter>
+        </dynamic>
+        <structure id="step1block2" region="glass-12"/>
+        <dynamic structure="step1block2">
+            <filter>
+                <any>
+                    <variable var="g4_step1">1</variable>
+                    <variable var="g4_struct_step1">0</variable>
+                </any>
+            </filter>
+        </dynamic>
+    </structures>
     <modes>
         <mode id="air-wall"    after="15s" filter="game1-state-0" material="air" name="`3First game is starting"/>
         <mode id="green_eyes1" after="0s"  filter="game1-state-2" material="35:5"/>
