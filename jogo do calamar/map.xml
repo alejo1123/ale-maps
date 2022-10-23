@@ -1,6 +1,6 @@
 <map proto="1.4.2" game="Death Run">
     <name>Jogo do Calamar</name>
-    <version>1.0.18</version>
+    <version>1.0.19</version>
     <objective>Survive the obstacle course as the Runners, or eliminate the enemy as Death</objective>
     <created>2022-10-03</created>
     <authors>
@@ -256,10 +256,10 @@
         <cuboid id="glass-122" min="203,32,-82" max="198,35,-77"/>
         <apply velocity="5,2,0" region="team1-play" filter="team2-done"/>
         <apply velocity="-5,2,0" region="team2-play" filter="team1-done"/>
-        <apply>
+        <apply region="game4-playable">
             <leave>
                 <deny>
-                    <filter id="game4-death"/>
+                    <variable var="eliminado">1</variable>
                 </deny>
             </leave>
         </apply>
@@ -364,6 +364,33 @@
                 <region id="glass-122" />
             </all>
         </any>
+        <union id="game4-playable">
+            <cuboid min="187,32,-150" max="220,4,-75"/>
+            <region id="glass-11"/>
+            <region id="glass-12"/>
+            <region id="glass-21" />
+            <region id="glass-22" />
+            <region id="glass-31" />
+            <region id="glass-32" />
+            <region id="glass-41" />
+            <region id="glass-42" />
+            <region id="glass-51" />
+            <region id="glass-52" />
+            <region id="glass-61" />
+            <region id="glass-62" />
+            <region id="glass-71" />
+            <region id="glass-72" />
+            <region id="glass-81" />
+            <region id="glass-82" />
+            <region id="glass-91" />
+            <region id="glass-92" />
+            <region id="glass-101" />
+            <region id="glass-102" />
+            <region id="glass-111" />
+            <region id="glass-112" />
+            <region id="glass-121" />
+            <region id="glass-122" />
+        </union>
         <all id="first16">
             <variable var="aux_tp">[-1, 0]</variable>
             <region id="portal1"/>
@@ -417,6 +444,7 @@
         <variable id="team_2" scope="match" default="1"/>
         <variable id="game2_state" scope="match" default="0"/>
         <variable id="game4_step" scope="match" default="0"/>
+        <variable id="eliminado" scope="player" default="0"/>
         <variable id="step1" scope="match" default="0"/>
         <variable id="step2" scope="match" default="0"/>
         <variable id="step3" scope="match" default="0"/>
@@ -450,6 +478,27 @@
                 <set var="step10" value="1+floor(random() * 2)"/>
                 <set var="step11" value="1+floor(random() * 2)"/>
                 <set var="step12" value="1+floor(random() * 2)"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player" filter="game4-death">
+            <action>
+                <set var="eliminado" value="1"/>
+            </action>
+        </trigger>
+
+        <trigger scope="player">
+            <filter>
+                <all>
+                    <any>
+                        <region id="t1-p1"/>
+                        <region id="t2-p1"/>
+                    </any>
+                    <participating/>
+                </all>
+            </filter>
+            <action>
+                <set var="game3_tp" value="game3_tp+1"/>
             </action>
         </trigger>
 
