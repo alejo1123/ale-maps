@@ -1,6 +1,6 @@
 <map proto="1.4.2" game="Death Run">
     <name>Jogo do Calamar</name>
-    <version>1.0.21</version>
+    <version>1.0.23</version>
     <objective>Survive the obstacle course as the Runners, or eliminate the enemy as Death</objective>
     <created>2022-10-03</created>
     <authors>
@@ -129,7 +129,7 @@
         </spawn>
         <spawn team="wtf" kit="runner-kit" yaw="-90">
             <regions>
-                <point>-99,35,-178.5</point>
+                <point>203,33,-157.5</point>
             </regions>
         </spawn>
         <spawn team="host" kit="host-kit" yaw="0"  pitch="-30">
@@ -256,13 +256,13 @@
         <cuboid id="glass-122" min="203,32,-82" max="198,35,-77"/>
         <apply velocity="5,2,0" region="team1-play" filter="team2-done"/>
         <apply velocity="-5,2,0" region="team2-play" filter="team1-done"/>
-        <apply region="game4-playable">
-            <leave>
-                <deny>
-                    <variable var="eliminado">1</variable>
-                </deny>
-            </leave>
-        </apply>
+<!--        <apply region="game4-playable">-->
+<!--            <leave>-->
+<!--                <deny>-->
+<!--                    <variable var="eliminado">1</variable>-->
+<!--                </deny>-->
+<!--            </leave>-->
+<!--        </apply>-->
     </regions>
     <filters>
         <any id="game4-death">
@@ -1037,6 +1037,215 @@
                 <any>
                     <variable var="g4_step1">1</variable>
                     <variable var="g4_struct_step1">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+
+        <structure id="step2block1" region="glass-21"/>
+        <dynamic structure="step2block1">
+            <trigger>
+                <any>
+                    <variable var="g4_step2">2</variable>
+                    <variable var="g4_struct_step2">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+        <structure id="step2block2" region="glass-22"/>
+        <dynamic structure="step2block2">
+            <trigger>
+                <any>
+                    <variable var="g4_step2">1</variable>
+                    <variable var="g4_struct_step2">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+
+        <structure id="step3block1" region="glass-31"/>
+        <dynamic structure="step3block1">
+            <trigger>
+                <any>
+                    <variable var="g4_step3">2</variable>
+                    <variable var="g4_struct_step3">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+        <structure id="step3block2" region="glass-32"/>
+        <dynamic structure="step3block2">
+            <trigger>
+                <any>
+                    <variable var="g4_step3">1</variable>
+                    <variable var="g4_struct_step3">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+
+        <structure id="step4block1" region="glass-41"/>
+        <dynamic structure="step4block1">
+            <trigger>
+                <any>
+                    <variable var="g4_step4">2</variable>
+                    <variable var="g4_struct_step4">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+        <structure id="step4block2" region="glass-42"/>
+        <dynamic structure="step4block2">
+            <trigger>
+                <any>
+                    <variable var="g4_step4">1</variable>
+                    <variable var="g4_struct_step4">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+
+        <structure id="step5block1" region="glass-51"/>
+        <dynamic structure="step5block1">
+            <trigger>
+                <any>
+                    <variable var="g4_step5">2</variable>
+                    <variable var="g4_struct_step5">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+        <structure id="step5block2" region="glass-52"/>
+        <dynamic structure="step5block2">
+            <trigger>
+                <any>
+                    <variable var="g4_step5">1</variable>
+                    <variable var="g4_struct_step5">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+
+        <structure id="step6block1" region="glass-61"/>
+        <dynamic structure="step6block1">
+            <trigger>
+                <any>
+                    <variable var="g4_step6">2</variable>
+                    <variable var="g4_struct_step6">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+        <structure id="step6block2" region="glass-62"/>
+        <dynamic structure="step6block2">
+            <trigger>
+                <any>
+                    <variable var="g4_step6">1</variable>
+                    <variable var="g4_struct_step6">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+
+        <structure id="step7block1" region="glass-71"/>
+        <dynamic structure="step7block1">
+            <trigger>
+                <any>
+                    <variable var="g4_step7">2</variable>
+                    <variable var="g4_struct_step7">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+        <structure id="step7block2" region="glass-72"/>
+        <dynamic structure="step7block2">
+            <trigger>
+                <any>
+                    <variable var="g4_step7">1</variable>
+                    <variable var="g4_struct_step7">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+
+        <structure id="step8block1" region="glass-81"/>
+        <dynamic structure="step8block1">
+            <trigger>
+                <any>
+                    <variable var="g4_step8">2</variable>
+                    <variable var="g4_struct_step8">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+        <structure id="step8block2" region="glass-82"/>
+        <dynamic structure="step8block2">
+            <trigger>
+                <any>
+                    <variable var="g4_step8">1</variable>
+                    <variable var="g4_struct_step8">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+
+        <structure id="step9block1" region="glass-91"/>
+        <dynamic structure="step9block1">
+            <trigger>
+                <any>
+                    <variable var="g4_step9">2</variable>
+                    <variable var="g4_struct_step9">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+        <structure id="step9block2" region="glass-92"/>
+        <dynamic structure="step9block2">
+            <trigger>
+                <any>
+                    <variable var="g4_step9">1</variable>
+                    <variable var="g4_struct_step9">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+
+        <structure id="step10block1" region="glass-101"/>
+        <dynamic structure="step10block1">
+            <trigger>
+                <any>
+                    <variable var="g4_step10">2</variable>
+                    <variable var="g4_struct_step10">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+        <structure id="step10block2" region="glass-102"/>
+        <dynamic structure="step10block2">
+            <trigger>
+                <any>
+                    <variable var="g4_step10">1</variable>
+                    <variable var="g4_struct_step10">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+
+        <structure id="step11block1" region="glass-111"/>
+        <dynamic structure="step11block1">
+            <trigger>
+                <any>
+                    <variable var="g4_step11">2</variable>
+                    <variable var="g4_struct_step11">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+        <structure id="step11block2" region="glass-112"/>
+        <dynamic structure="step11block2">
+            <trigger>
+                <any>
+                    <variable var="g4_step11">1</variable>
+                    <variable var="g4_struct_step11">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+
+        <structure id="step12block1" region="glass-121"/>
+        <dynamic structure="step12block1">
+            <trigger>
+                <any>
+                    <variable var="g4_step12">2</variable>
+                    <variable var="g4_struct_step12">0</variable>
+                </any>
+            </trigger>
+        </dynamic>
+        <structure id="step12block2" region="glass-122"/>
+        <dynamic structure="step12block2">
+            <trigger>
+                <any>
+                    <variable var="g4_step12">1</variable>
+                    <variable var="g4_struct_step12">0</variable>
                 </any>
             </trigger>
         </dynamic>
