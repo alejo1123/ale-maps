@@ -1,6 +1,6 @@
 <map proto="1.4.2" game="Death Run">
     <name>Jogo do Calamar</name>
-    <version>1.0.14</version>
+    <version>1.0.15</version>
     <objective>Survive the obstacle course as the Runners, or eliminate the enemy as Death</objective>
     <created>2022-10-03</created>
     <authors>
@@ -417,15 +417,6 @@
         <variable id="game1-state-5" var="game1_state">5</variable>
         <variable id="game1-state-6" var="game1_state">6</variable>
         <variable id="game2-finish" var="game1_state">1</variable>
-        <variable id="game4-sequence-1" var="game4_sequence">1</variable>
-        <variable id="game4-sequence-2" var="game4_sequence">2</variable>
-        <variable id="game4-sequence-3" var="game4_sequence">3</variable>
-        <variable id="game4-sequence-4" var="game4_sequence">4</variable>
-        <variable id="game4-sequence-5" var="game4_sequence">5</variable>
-        <variable id="game4-sequence-6" var="game4_sequence">6</variable>
-        <variable id="game4-sequence-7" var="game4_sequence">7</variable>
-        <variable id="game4-sequence-8" var="game4_sequence">8</variable>
-        <variable id="game4-sequence-9" var="game4_sequence">9</variable>
         <variable id="team1-done" var="team_1">(-oo,0]</variable>
         <variable id="team2-done" var="team_2">(-oo,0]</variable>
     </filters>
