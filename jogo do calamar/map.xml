@@ -1,6 +1,6 @@
 <map proto="1.4.2" game="Death Run">
     <name>Jogo do Calamar</name>
-    <version>1.0.20</version>
+    <version>1.0.21</version>
     <objective>Survive the obstacle course as the Runners, or eliminate the enemy as Death</objective>
     <created>2022-10-03</created>
     <authors>
@@ -1024,21 +1024,21 @@
     <structures>
         <structure id="step1block1" region="glass-11"/>
         <dynamic structure="step1block1">
-            <filter>
+            <trigger>
                 <any>
                     <variable var="g4_step1">2</variable>
                     <variable var="g4_struct_step1">0</variable>
                 </any>
-            </filter>
+            </trigger>
         </dynamic>
         <structure id="step1block2" region="glass-12"/>
         <dynamic structure="step1block2">
-            <filter>
+            <trigger>
                 <any>
                     <variable var="g4_step1">1</variable>
                     <variable var="g4_struct_step1">0</variable>
                 </any>
-            </filter>
+            </trigger>
         </dynamic>
     </structures>
     <modes>
