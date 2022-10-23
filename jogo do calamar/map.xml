@@ -1,6 +1,6 @@
 <map proto="1.4.2" game="Death Run">
     <name>Jogo do Calamar</name>
-    <version>1.0.16</version>
+    <version>1.0.17</version>
     <objective>Survive the obstacle course as the Runners, or eliminate the enemy as Death</objective>
     <created>2022-10-03</created>
     <authors>
@@ -230,18 +230,6 @@
         <cuboid id="eyes-region" min="-1,25,-12" max="2,26,-13"/>
         <block id="win-region">0,18,105</block>
         <cuboid id="var-random" min="198,33,-149" max="209,35,-148"/>
-        <cuboid id="step1" min="200,33,-148" max="207,35,-144"/>
-        <cuboid id="step2" min="200,33,-142" max="207,35,-138"/>
-        <cuboid id="step3" min="200,33,-136" max="207,35,-132"/>
-        <cuboid id="step4" min="200,33,-130" max="207,35,-126"/>
-        <cuboid id="step5" min="200,33,-124" max="207,35,-120"/>
-        <cuboid id="step6" min="200,33,-118" max="207,35,-114"/>
-        <cuboid id="step7" min="200,33,-112" max="207,35,-108"/>
-        <cuboid id="step8" min="200,33,-106" max="207,35,-102"/>
-        <cuboid id="step9" min="200,33,-100" max="207,35,-96"/>
-        <cuboid id="step10" min="200,33,-92" max="207,35,-90"/>
-        <cuboid id="step11" min="200,33,-88" max="207,35,-84"/>
-        <cuboid id="step12" min="200,33,-82" max="207,35,-78"/>
         <cuboid id="glass-11" min="209,32,-148" max="204,35,-143"/>
         <cuboid id="glass-12" min="203,32,-148" max="198,35,-143"/>
         <cuboid id="glass-21" min="209,32,-142" max="204,35,-137"/>
