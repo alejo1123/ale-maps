@@ -1,6 +1,6 @@
 <map proto="1.4.2" game="Death Run">
     <name>Jogo do Calamar</name>
-    <version>1.0.13</version>
+    <version>1.0.14</version>
     <objective>Survive the obstacle course as the Runners, or eliminate the enemy as Death</objective>
     <created>2022-10-03</created>
     <authors>
@@ -456,7 +456,7 @@
 
         <trigger scope="match">
             <filter>
-                <running/>
+                <match-running/>
             </filter>
             <action>
                 <set var="step1" value="1+floor(random() * 2)"/>
