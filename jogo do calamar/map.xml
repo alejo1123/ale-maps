@@ -1,6 +1,6 @@
 <map proto="1.4.2" game="Death Run">
     <name>Jogo do Calamar</name>
-    <version>1.0.17</version>
+    <version>1.0.18</version>
     <objective>Survive the obstacle course as the Runners, or eliminate the enemy as Death</objective>
     <created>2022-10-03</created>
     <authors>
@@ -865,15 +865,15 @@
         <destroyable name="eyes" show="false" owner="host" material="35:14" region="eyes-region" modes="green_eyes1 red_eyes1 green_eyes2 red_eyes2 green_eyes3 red_eyes3 green_eyes4 red_eyes4 green_eyes5 red_eyes5"/>
         <destroyable name="winning monu" show="true" owner="host" material="sponge" region="win-region"/>
     </destroyables>
-    <structures>
-        <structure id="step1block1" region="glass-11"/>
-        <dynamic structure="step1block1" region="glass-11">
-            <filter>
-                <variable var="step1">1</variable>
-                <region>step1block1</region>
-            </filter>
-        </dynamic>
-    </structures>
+<!--    <structures>-->
+<!--        <structure id="step1block1" region="glass-11"/>-->
+<!--        <dynamic structure="step1block1" region="glass-11">-->
+<!--            <filter>-->
+<!--                <variable var="step1">1</variable>-->
+<!--                <region>step1block1</region>-->
+<!--            </filter>-->
+<!--        </dynamic>-->
+<!--    </structures>-->
     <modes>
         <mode id="air-wall"    after="15s" filter="game1-state-0" material="air" name="`3First game is starting"/>
         <mode id="green_eyes1" after="0s"  filter="game1-state-2" material="35:5"/>
