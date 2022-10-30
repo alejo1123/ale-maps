@@ -849,16 +849,14 @@
             </action>
         </trigger>
 
-        <trigger scope="player">
+        <trigger scope="match">
             <filter>
                 <after duration="1s">
-                    <all>
+                    <players max="0" min="0">
                         <variable var="game2_state">0</variable>
                         <team>how</team>
-                        <not>
-                            <carrying><item material="133"/></carrying>
-                        </not>
-                    </all>
+                        <carrying><item material="133"/></carrying>
+                    </players>
                 </after>
             </filter>
             <action>
@@ -1015,11 +1013,9 @@
     </actions>
     <destroyables>
         <destroyable name="glass-monu" show="false" owner="runners" material="166" region="1st-game-barrier" modes="air-wall"/>
-        <destroyable name="muro-portal" show="false" owner="runners" material="166" region="portal-wall" modes="portalair"/>
+        <destroyable name="eyes" show="false" owner="host" material="35:14" region="eyes-region" modes="green_eyes1 red_eyes1 green_eyes2 red_eyes2 green_eyes3 red_eyes3 green_eyes4 red_eyes4 green_eyes5 red_eyes5"/>
         <destroyable name="team1-wool" show="false" owner="test" materials="wool;159:4;166;85;192;171:4;72" region="team1-platform" modes="airteam2"/>
         <destroyable name="team2-wool" show="false" owner="how" materials="wool;159:4;166;85;192;171:4;72" region="team2-platform" modes="airteam1"/>
-        <destroyable name="eyes" show="false" owner="host" material="35:14" region="eyes-region" modes="green_eyes1 red_eyes1 green_eyes2 red_eyes2 green_eyes3 red_eyes3 green_eyes4 red_eyes4 green_eyes5 red_eyes5"/>
-        <destroyable name="winning monu" show="true" owner="host" material="sponge" region="win-region"/>
     </destroyables>
     <structures>
         <structure id="step1block1" region="glass-11"/>
